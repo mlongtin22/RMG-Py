@@ -494,6 +494,21 @@ class Species(object):
         eg. 2 for bidentate.
         """
         return self.molecule[0].number_of_surface_sites()
+    def is_electron(self):
+        """Return ``True`` if the species is an electron"""
+        
+        if len(self.molecule) == 0:
+            return False
+        else:
+            return self.molecule[0].is_electron()
+
+    def is_proton(self):
+        """Return ``True`` if the species is a proton"""
+        
+        if len(self.molecule) == 0:
+            return False
+        else:
+            return self.molecule[0].is_proton()
 
     def get_partition_function(self, T):
         """

@@ -1378,6 +1378,44 @@ class SolvationDatabase(object):
 
         solute_data = solute_data_sat
 
+        added_to_pairs = {}
+
+        for atom in saturated_struct.atoms:
+            added_to_pairs[atom] = 0
+            if atom.lone_pairs > 0:
+                charge = atom.charge  # Record this so we can conserve it when checking
+                bonds = saturated_struct.get_bonds(atom)
+                sum_bond_orders = 0
+                for key, bond in bonds.items():
+                    sum_bond_orders += bond.order  # We should always have 2 'B' bonds (but what about Cbf?)
+                if ATOMTYPES['Val4'] in atom.atomtype.generic:  # Carbon, Silicon
+                    while atom.radical_electrons + charge + sum_bond_orders < 4:
+                        atom.decrement_lone_pairs()
+                        atom.increment_radical()
+                        atom.increment_radical()
+                        added_to_pairs[atom] += 1
+                if ATOMTYPES['Val5'] in atom.atomtype.generic:  # Nitrogen
+                    while atom.radical_electrons + charge + sum_bond_orders < 3:
+                        atom.decrement_lone_pairs()
+                        atom.increment_radical()
+                        atom.increment_radical()
+                        added_to_pairs[atom] += 1
+                if ATOMTYPES['Val6'] in atom.atomtype.generic:  # Oxygen, sulfur
+                    while atom.radical_electrons + charge + sum_bond_orders < 2:
+                        atom.decrement_lone_pairs()
+                        atom.increment_radical()
+                        atom.increment_radical()
+                        added_to_pairs[atom] += 1
+                if ATOMTYPES['Val7'] in atom.atomtype.generic:  # Chlorine
+                    while atom.radical_electrons + charge + sum_bond_orders < 1:
+                        atom.decrement_lone_pairs()
+                        atom.increment_radical()
+                        atom.increment_radical()
+                        added_to_pairs[atom] += 1
+
+        saturated_struct.update_charge() # we need to update charges before updating lone pairs
+        saturated_struct.update()
+
         # For each radical site, get radical correction
         # Only one radical site should be considered at a time; all others
         # should be saturated with hydrogen atoms

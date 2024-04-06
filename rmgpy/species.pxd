@@ -63,6 +63,9 @@ cdef class Species:
     cpdef get_net_charge(self)
 
     cpdef generate_resonance_structures(self, bint keep_isomorphic=?, bint filter_structures=?, bint save_order=?)
+    cpdef get_net_charge(self)
+
+    cpdef generate_resonance_structures(self, bint keep_isomorphic=?, bint filter_structures=?)
     
     cpdef bint is_isomorphic(self, other, bint generate_initial_map=?, bint save_order=?, bint strict=?) except -2
 

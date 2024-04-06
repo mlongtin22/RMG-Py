@@ -569,6 +569,26 @@ cdef class SurfaceArrhenius(Arrhenius):
         """
         return (SurfaceArrhenius, (self.A, self.n, self.Ea, self.T0, self.Tmin, self.Tmax, self.Pmin, self.Pmax,
                                    self.coverage_dependence, self.uncertainty, self.comment))
+                                   self.uncertainty, self.comment))
+
+    cpdef SurfaceChargeTransfer to_surface_charge_transfer(self, double V0, double electrons=-1):
+        """
+        Return an :class:`SurfaceChargeTransfer` instance of the kinetics model with reversible
+        potential `V0` in Volts and electron stochiometric coeff ` electrons`
+        """
+        return SurfaceChargeTransfer(
+            A=self.A,
+            n=self.n,
+            electrons= electrons,
+            Ea=self.Ea,
+            V0=(V0,'V'),
+            T0=(1, "K"),
+            Tmin=self.Tmin,
+            Tmax=self.Tmax,
+            uncertainty = self.uncertainty,
+            comment=self.comment,
+        )
+
 
     cpdef SurfaceChargeTransfer to_surface_charge_transfer(self, double V0, double electrons=-1):
         """

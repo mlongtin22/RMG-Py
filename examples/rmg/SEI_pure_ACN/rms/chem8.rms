@@ -1,0 +1,291 @@
+Interfaces:
+- {}
+Phases:
+- Species:
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with acetonitrile as solvent and solute estimated using Solute library:
+      Ar'
+    name: Ar
+    radicalelectrons: 0
+    smiles: '[Ar]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - -588.0394626373904
+        - 3.8114903872570594
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 77909.03676037295
+        - 360.46450862944823
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with acetonitrile as solvent and solute estimated using Solute library:
+      He'
+    name: He
+    radicalelectrons: 0
+    smiles: '[He]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - 250.056121784567
+        - 1.4212795031083265
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 78747.13234479493
+        - 358.0742977452995
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with acetonitrile as solvent and solute estimated using Solute library:
+      Ne'
+    name: Ne
+    radicalelectrons: 0
+    smiles: '[Ne]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - 117.93469062213109
+        - 3.6806561021289235
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 78615.01091363248
+        - 360.33367434432006
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with acetonitrile as solvent and solute estimated using Solute library:
+      N2'
+    name: N2
+    radicalelectrons: 0
+    smiles: N#N
+    thermo:
+      polys:
+      - Tmax: 1476.6035576546144
+        Tmin: 100.0
+        coefs:
+        - 3.541357825681773
+        - -0.0006933508913992505
+        - 2.1009603166257027e-06
+        - -1.289667308474215e-09
+        - 2.585793107760845e-13
+        - -653.0279991205869
+        - 2.7161861609866733
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1476.6035576546144
+        coefs:
+        - 2.8332321666260896
+        - 0.0016000849412844684
+        - -6.099396341300967e-07
+        - 1.0634048328341487e-10
+        - -6.908448483162686e-15
+        - -484.8052180364459
+        - 6.269973033705229
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with acetonitrile as solvent and solute estimated using Solute library:
+      [Li+]'
+    name: Lip
+    radicalelectrons: 0
+    smiles: '[Li+]'
+    thermo:
+      polys:
+      - Tmax: 1963.9111918564479
+        Tmin: 100.0
+        coefs:
+        - 2.500002405444192
+        - 1.657916206169566e-15
+        - -3.5195037573777435e-18
+        - 2.5031085403871695e-21
+        - -5.521952537251367e-25
+        - -15465.42115675873
+        - -102.76930841278347
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1963.9111918564479
+        coefs:
+        - 2.50000240542476
+        - 2.919803783414917e-14
+        - -1.5359741897789922e-17
+        - 3.4012575558441545e-21
+        - -2.6921741562361376e-25
+        - -15465.421156748775
+        - -102.7693084126707
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumAdditionalThermo +
+      Solvation correction with acetonitrile as solvent and solute estimated using
+      Solute library: acetonitrile'
+    name: ACN
+    radicalelectrons: 0
+    smiles: CC#N
+    thermo:
+      polys:
+      - Tmax: 1027.6035535148906
+        Tmin: 100.0
+        coefs:
+        - 3.582616729102711
+        - 0.006061336303905254
+        - 1.4226054791293073e-05
+        - -1.8556857787082506e-08
+        - 6.4201537418586844e-12
+        - 3329.4979761101526
+        - 0.2897968990955566
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1027.6035535148906
+        coefs:
+        - 4.209644255517661
+        - 0.011261228076624386
+        - -4.517341808977402e-06
+        - 8.387383620950559e-10
+        - -5.881668235933124e-14
+        - 2797.21744819384
+        - -4.715206413283766
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: gas
+- Species:
+  - adjlist: '1 X u0 p0 c0
+
+      '
+    comment: 'Thermo library corrected for liquid phase: LithiumSurface + Solvation
+      correction with acetonitrile as solvent and solute estimated using '
+    name: vacantX
+    radicalelectrons: 0
+    smiles: '[Pt]'
+    thermo:
+      polys:
+      - Tmax: 1530.565154236656
+        Tmin: 100.0
+        coefs:
+        - 0.00142408942421923
+        - -1.9013991006720932e-06
+        - -3.521875076674216e-09
+        - 5.5255336611737474e-12
+        - -1.7858465938591354e-15
+        - -390.5710209439659
+        - -1.2686689119425805
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1530.565154236656
+        coefs:
+        - -0.017576735888376688
+        - 2.9603233525005808e-05
+        - -1.660748007822803e-08
+        - 3.4764953830667818e-12
+        - -1.8549657915946134e-16
+        - -382.62840488410757
+        - -1.161967606014292
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 N u0 p1 c0 {3,T}
+
+      2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
+
+      3 C u0 p0 c0 {1,T} {2,S}
+
+      4 H u0 p0 c0 {2,S}
+
+      5 H u0 p0 c0 {2,S}
+
+      6 X u0 p0 c0 {2,S}
+
+      '
+    comment: 'Gas phase thermo for [CH2]CtN from Thermo library corrected for liquid
+      phase: LithiumAdditionalThermo. Adsorption correction: + Thermo group additivity
+      estimation: adsorptionLi(C*) + Solvation correction with acetonitrile as solvent
+      and solute estimated using Solute library: [CH2]C#N'
+    name: '[Pt]CC#N'
+    radicalelectrons: 0
+    smiles: '[Pt]CC#N'
+    thermo:
+      polys:
+      - Tmax: 949.0688587945178
+        Tmin: 100.0
+        coefs:
+        - 3.6155032439521255
+        - 8.736149808513006e-06
+        - 4.135956976855297e-05
+        - -5.3775909457284275e-08
+        - 2.0520534763760738e-11
+        - -30648.48534434609
+        - -30.814580222806807
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 949.0688587945178
+        coefs:
+        - 7.387688760747818
+        - 0.00564912727734495
+        - -1.5971418325539331e-06
+        - 3.113530983326964e-10
+        - -2.589028933006806e-14
+        - -32334.534819872064
+        - -53.926473284702226
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: surface
+Reactions: []
+Solvents:
+- mu:
+    A: -10.906
+    B: 872.02
+    C: 0.0
+    D: 0.0
+    E: 0.0
+    type: RiedelViscosity
+  name: acetonitrile
+  type: Solvent
+Units: {}

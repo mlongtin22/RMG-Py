@@ -1,0 +1,877 @@
+ELEMENTS
+	H
+	D /2.014/
+	T /3.016/
+	C
+	CI /13.003/
+	O
+	OI /17.999/
+	N
+	Ne
+	Ar
+	He
+	Si
+	S
+	F
+	Cl
+	Br
+	I
+	X /195.083/
+END
+
+SPECIES
+    Ar                  ! Ar
+    He                  ! He
+    Ne                  ! Ne
+    N2                  ! N2
+    Lip(1)              ! Lip(1)
+    C3H4O3(2)           ! ethylene-carbonate(2)
+    Li(4)               ! Li(4)
+    C3H4LiO3(5)         ! [Li]O[C]1OCCO1(5)
+    C3H4LiO3(6)         ! [Li]OC(=O)OC[CH2](6)
+    C3H4LiO3(8)         ! [Li]OCCO[C]=O(8)
+    C2H3LiO(14)         ! [Li]OC=C(14)
+    C2H4(23)            ! C=C(23)
+    CLi2O3(24)          ! [Li]OC(=O)O[Li](24)
+    C[CH2](27)          ! C[CH2](27)
+    C3H5LiO3(59)        ! [Li]OC(=O)OCC(59)
+    C4H8LiO(69)         ! [Li]OCCC[CH2](69)
+    C4H4Li2O6(77)       ! [Li]OC(=O)OCCOC(=O)O[Li](77)
+    C3H3O3(78)          ! O=C1O[CH]CO1(78)
+    CLiO2(87)           ! [Li]O[C]=O(87)
+    C3H4Li2O3(88)       ! [Li]CCOC(=O)O[Li](88)
+    C6H8Li2O6(103)      ! [Li]OC(=O)OCCCCOC(=O)O[Li](103)
+    C6H6O6(106)         ! O=C1OCC(C2COC(=O)O2)O1(106)
+    C4H4Li2O6(176)      ! [Li]OCCOC(=O)OC(=O)O[Li](176)
+    C6H8Li2O6(177)      ! [Li]OCCOC(=O)CCOC(=O)O[Li](177)
+    C6H8Li2O6(184)      ! [Li]OCCOC(=O)C(=O)OCCO[Li](184)
+    C5H8LiO3(201)       ! [Li]OC(=O)OCCC[CH2](201)
+    C3H3O3(275)         ! C1O[C]2OC1O2(275)
+    C6H7LiO6(309)       ! [Li]OC(=O)OCCC1COC(=O)O1(309)
+    C6H7LiO6(333)       ! [Li]OCCOC(=O)C1COC(=O)O1(333)
+    C5H7O3(338)         ! [CH2]CC1COC(=O)O1(338)
+    C4H3Li2O6(377)      ! [Li]O[CH]COC(=O)OC(=O)O[Li](377)
+    C6H7Li2O6(441)      ! [Li]O[CH]COC(=O)CCOC(=O)O[Li](441)
+    C7H7LiO8(516)       ! [Li]OC(=O)OCCC(=O)OC1COC(=O)O1(516)
+    C8H11LiO6(806)      ! [Li]OC(=O)OCCCCC1COC(=O)O1(806)
+    C8H12Li2O6(1096)    ! [Li]OCCOC(=O)CCCCOC(=O)O[Li](1096)
+    C7H13LiO3(1126)     ! [Li]OC(=O)OCCCCCC(1126)
+END
+
+
+
+THERM ALL
+   300.000  1000.000  5000.000
+
+! Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: Ar
+Ar                      Ar  1               G   100.000  5000.000 4996.86      1
+-4.86862231E+01 1.90728012E-02 8.49269033E-07-9.90485659E-10 9.34419177E-14    2
+ 7.76958830E+04 3.59815172E+02 2.50000000E+00 4.30732087E-14-5.28912510E-17    3
+ 2.10457488E-20-2.57139738E-24-8.01193198E+02 3.16215381E+00                   4
+
+! Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: He
+He                      He  1               G   100.000  5000.000 4996.86      1
+-4.86862231E+01 1.90728012E-02 8.49269033E-07-9.90485659E-10 9.34419177E-14    2
+ 7.83800588E+04 3.57415356E+02 2.50000000E+00 4.30732087E-14-5.28912510E-17    3
+ 2.10457488E-20-2.57139738E-24-1.17017378E+02 7.62337558E-01                   4
+
+! Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: Ne
+Ne                      Ne  1               G   100.000  5000.000 4996.86      1
+-4.86862231E+01 1.90728012E-02 8.49269033E-07-9.90485659E-10 9.34419177E-14    2
+ 7.82722021E+04 3.59676247E+02 2.50000000E+00 4.30732087E-14-5.28912510E-17    3
+ 2.10457488E-20-2.57139738E-24-2.24874155E+02 3.02322839E+00                   4
+
+! Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: N2
+N2                      N   2               G   100.000  5000.000 1476.60      1
+ 2.83323217E+00 1.60008494E-03-6.09939634E-07 1.06340483E-10-6.90844848E-15    2
+-7.40349012E+02 5.61799110E+00 3.54135783E+00-6.93350891E-04 2.10096032E-06    3
+-1.28966731E-09 2.58579311E-13-9.08571793E+02 2.06420423E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li+]
+Lip(1)                  Li  1               G   100.000  5000.000 1963.91      1
+ 2.50000241E+00 2.91980378E-14-1.53597419E-17 3.40125756E-21-2.69217416E-25    2
+-2.15375875E+03-6.52137642E+01 2.50000241E+00 1.65791621E-15-3.51950376E-18    3
+ 2.50310854E-21-5.52195254E-25-2.15375875E+03-6.52137642E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: O=C1OCCO1
+C3H4O3(2)               C   3H   4O   3     G   100.000  5000.000 1044.32      1
+ 8.03109587E+00 2.06035470E-02-8.84715328E-06 1.73977289E-09-1.27232474E-13    2
+-7.20452580E+04-2.43678070E+01 2.82418532E+00 1.65989496E-02 3.13029397E-05    3
+-4.58499568E-08 1.65220651E-11-6.96518195E+04 7.23074707E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]
+Li(4)                   Li  1               G   100.000  5000.000 1963.91      1
+ 2.50000241E+00 2.91980378E-14-1.53597419E-17 3.40125756E-21-2.69217416E-25    2
+ 1.71763721E+04 1.41620090E-01 2.50000241E+00 1.65791621E-15-3.51950376E-18    3
+ 2.50310854E-21-5.52195254E-25 1.71763721E+04 1.41620090E-01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]O[C]1OCCO1
+C3H4LiO3(5)             C   3H   4Li  1O   3G   100.000  5000.000  997.57      1
+ 1.12988778E+01 2.05425941E-02-8.81454946E-06 1.71722326E-09-1.24654626E-13    2
+-6.98600768E+04-4.91235382E+01 2.74122178E+00 3.16608699E-02 9.34592377E-06    3
+-3.37283395E-08 1.45998155E-11-6.69985530E+04-2.07378672E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OC(=O)OC[CH2]
+C3H4LiO3(6)             C   3H   4Li  1O   3G   100.000  5000.000 1129.67      1
+ 1.36874586E+01 1.65853995E-02-7.02771972E-06 1.34596683E-09-9.60930613E-14    2
+-8.44739112E+04-5.59471502E+01 5.87498273E+00 2.57029794E-02 5.49050932E-06    3
+-2.05736511E-08 7.97078693E-12-8.15254718E+04-1.20664101E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OCCO[C]=O
+C3H4LiO3(8)             C   3H   4Li  1O   3G   100.000  5000.000 1082.79      1
+ 1.22167943E+01 1.86281588E-02-7.92661156E-06 1.52614425E-09-1.09507045E-13    2
+-6.51844715E+04-5.15400502E+01 6.17150406E+00 1.86426462E-02 2.29706538E-05    3
+-3.65328705E-08 1.30728644E-11-6.25670207E+04-1.58528294E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OC=C
+C2H3LiO(14)             C   2H   3Li  1O   1G   100.000  5000.000 1087.62      1
+ 6.88507468E+00 1.15312111E-02-4.78628917E-06 9.08273884E-10-6.45669181E-14    2
+-3.90135820E+04-2.79798494E+01 4.10890058E+00 1.04498784E-02 1.22777627E-05    3
+-1.90967783E-08 6.72791996E-12-3.77418596E+04-1.12830510E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: ethene
+C2H4(23)                C   2H   4          G   100.000  5000.000  941.52      1
+ 2.53329682E+00 1.29421087E-02-5.27440288E-06 9.98746975E-10-7.13077404E-14    2
+ 3.97706440E+03 5.54592537E+00 3.94815770E+00-4.90094940E-03 4.20033124E-05    3
+-4.58252763E-08 1.59060545E-11 4.23506872E+03 1.59032197E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OC(=O)O[Li]
+CLi2O3(24)              C   1Li  2O   3     G   100.000  5000.000 1337.28      1
+ 1.21096627E+01 4.13569377E-03-1.77198137E-06 3.44237933E-10-2.48614137E-14    2
+-1.28489932E+05-6.44843199E+01 2.23324015E+00 3.36778387E-02-3.49091696E-05    3
+ 1.68641133E-08-3.11323015E-12-1.25848452E+05-1.39659368E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: C[CH2]
+C[CH2](27)              C   2H   5          G   100.000  5000.000 1043.59      1
+ 3.24177643E+00 1.43254769E-02-5.67487030E-06 1.04275290E-09-7.25097137E-14    2
+ 1.18650467E+04 4.22234428E+00 3.66960095E+00 4.21154808E-03 2.10426471E-05    3
+-2.38060163E-08 7.74423034E-12 1.22371986E+04 4.35095212E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-CsOsHH) + group(Cs-CsHHH) + group(Cds-OdOsOs) +
+! group(Li-OCOdO) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) +
+! group(O2d-Cd) + group(Cs-Cs(Os-R)HH) + group(Cs-CsHHH) + group(Cds-OdOsOs) + group(Li-OCOdO)
+C3H5LiO3(59)            C   3H   5Li  1O   3G   100.000  5000.000 1830.15      1
+ 1.33841813E+01 2.19298099E-02-9.80884931E-06 1.81049622E-09-1.22010125E-13    2
+-1.10118579E+05-6.10267792E+01 1.72416675E+00 4.74139740E-02-3.06957000E-05    3
+ 9.41889051E-09-1.16131826E-12-1.05850644E+05 2.27339358E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OCCC[CH2]
+C4H8LiO(69)             C   4H   8Li  1O   1G   100.000  5000.000 1090.46      1
+ 1.12358486E+01 2.67323594E-02-1.09671336E-05 2.06533457E-09-1.46068233E-13    2
+-2.94772257E+04-4.47347798E+01 6.28717086E+00 1.82202754E-02 3.74208858E-05    3
+-4.99415326E-08 1.69180849E-11-2.68126049E+04-1.31625179E+01                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! Solute library: [Li]OC(=O)OCCOC(=O)O[Li]
+C4H4Li2O6(77)           C   4H   4Li  2O   6G   100.000  5000.000 1245.23      1
+ 2.35254626E+01 2.24312008E-02-9.22631251E-06 1.72967458E-09-1.21480339E-13    2
+-2.07760382E+05-1.11470448E+02 3.18199154E+00 7.29609407E-02-5.22436468E-05    3
+ 1.52033222E-08-9.07845171E-13-2.01545029E+05-4.25004406E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + radical(CCsJOC(O)) + Solvation correction with ethylene carbonate as solvent and
+! solute estimated using Solute library: O=C1OCCO1
+C3H3O3(78)              C   3H   3O   3     G   100.000  5000.000 1025.20      1
+ 1.04808130E+01 1.39875660E-02-5.81266213E-06 1.15121908E-09-8.53013959E-14    2
+-4.89778109E+04-3.51543497E+01 2.43289156E+00 2.60982881E-02 4.69109613E-06    3
+-2.40322195E-08 1.05312889E-11-4.63139599E+04 8.81645470E+00                   4
+
+! Thermo library corrected for liquid phase: LithiumPrimaryThermo + radical((O)CJOC) + Solvation correction with ethylene carbonate as solvent and
+! solute estimated using Solute library: [Li]OC=O
+CLiO2(87)               C   1Li  1O   2     G   100.000  5000.000  847.49      1
+ 6.50777533E+00 4.53314804E-03-2.04611284E-06 3.88968144E-10-2.69807309E-14    2
+-5.15504446E+04-2.35681246E+01 3.11062545E+00 2.05653134E-02-3.04188294E-05    3
+ 2.27055222E-08-6.60938591E-12-5.09745709E+04-7.74061285E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-CsOsHH) + group(Cs-CsCsCsCs) + group(Cds-OdOsOs) +
+! group(Li-C) + group(Li-OCOdO) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) +
+! group(O2s-CsCs) + group(O2d-Cd) + group(Cs-Cs(Os-R)HH) + group(Cs-CsCsCsCs) + group(Cds-OdOsOs) + group(Li-C) + group(Li-OCOdO)
+C3H4Li2O3(88)           C   3H   4Li  2O   3G   100.000  5000.000  743.87      1
+ 7.99448527E+00 3.46187812E-02-1.74093305E-05 3.44009097E-09-2.44515964E-13    2
+-1.00622239E+05-3.55213900E+01 9.88784382E-01 7.22868177E-02-9.33589567E-05    3
+ 7.15006913E-08-2.31161490E-11-9.95798731E+04-3.79517242E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + group(Li-OCOdO)
+! + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs)
+! + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-
+! OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + group(Li-OCOdO)
+C6H8Li2O6(103)          C   6H   8Li  2O   6G   100.000  5000.000  987.99      1
+ 1.27472498E+01 6.41556919E-02-3.20642065E-05 6.39285291E-09-4.59256784E-13    2
+-2.08107822E+05-5.95275978E+01-9.57103508E-01 1.19639374E-01-1.16301278E-04    3
+ 6.32334637E-08-1.48421242E-11-2.05399865E+05 6.42242216E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(Cs-
+! CsCsOsH) + group(Cs-CsCsOsH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + ring(Cyclopentane) + ring(Cyclopentane) +
+! Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) +
+! group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2d-Crd) + group(O2d-Crd) + group(Crs-CrsCrs(Ors-R)H) + group(Crs-CrsCrs(Ors-R)H) + group(Crs-
+! Crs(Ors-R)HH) + group(Crs-Crs(Ors-R)HH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + ring(1,3-Dioxolane) + ring(1,3-Dioxolane)
+C6H6O6(106)             C   6H   6O   6     G   100.000  5000.000  956.08      1
+ 2.83145488E+01 1.78983676E-02-4.68613870E-06 1.07379930E-09-1.01686474E-13    2
+-1.44450656E+05-1.30633995E+02 1.01505718E+00 2.22746755E-02 1.60775095E-04    3
+-2.34464564E-07 9.29091571E-11-1.34210526E+05 2.60974802E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-O2d)(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd))
+! + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-OCOdO) + Solvation correction with ethylene
+! carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-O2d)(Cds-O2d)) + group(O2s-CsCs) + group(O2s-CsCs) +
+! group(O2d-Cd) + group(O2d-Cd) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-
+! OCOdO)
+C4H4Li2O6(176)          C   4H   4Li  2O   6G   100.000  5000.000 1083.56      1
+ 1.70447910E+01 3.46262486E-02-1.72501128E-05 3.44414203E-09-2.47983938E-13    2
+-1.85420855E+05-8.19441871E+01-3.42884725E-01 9.88139554E-02-1.06107483E-04    3
+ 5.81145778E-08-1.28616951E-11-1.81652766E+05 3.33655907E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-(Cds-O2d)CsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-
+! OCOdO) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) +
+! group(O2s-CsCs) + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-(Cds-O2d)CsHH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cs-
+! Cs(Os-R)HH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-OCOdO)
+C6H8Li2O6(177)          C   6H   8Li  2O   6G   100.000  5000.000  839.39      1
+ 1.00339565E+01 6.90193418E-02-3.43293641E-05 6.81152792E-09-4.87554421E-13    2
+-1.91592911E+05-4.38486721E+01-1.02808050E+00 1.21734356E-01-1.28532381E-04    3
+ 8.16306793E-08-2.27714961E-11-1.89735851E+05 7.58244557E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-O2d(Cds-O2d)O2s) + group(Cds-O2d(Cds-O2d)O2s) + group(Li-OCH2C)
+! + group(Li-OCH2C) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d))
+! + group(O2s-CsCs) + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cs-
+! Cs(Os-R)HH) + group(Cds-O2d(Cds-O2d)O2s) + group(Cds-O2d(Cds-O2d)O2s) + group(Li-OCH2C) + group(Li-OCH2C)
+C6H8Li2O6(184)          C   6H   8Li  2O   6G   100.000  5000.000  937.79      1
+ 1.14941551E+01 6.84297896E-02-3.42217675E-05 6.81598935E-09-4.89264499E-13    2
+-1.69897315E+05-5.39178279E+01-1.02126490E+00 1.21812580E-01-1.19608106E-04    3
+ 6.75165893E-08-1.66711397E-11-1.67549955E+05 5.65794122E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsOsHH) +
+! group(Cs-CsHHH) + group(Cds-OdOsOs) + group(Li-OCOdO) + radical(RCCJ) + Solvation correction with ethylene carbonate as solvent and solute estimated
+! using group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Cd) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-Cs(Os-R)HH) + group(Cs-CsHHH) +
+! group(Cds-OdOsOs) + group(Li-OCOdO)
+C5H8LiO3(201)           C   5H   8Li  1O   3G   100.000  5000.000 1314.29      1
+ 1.11190230E+01 4.22790624E-02-1.97128104E-05 3.80043366E-09-2.67008739E-13    2
+-9.02011178E+04-4.16727540E+01 8.39960340E-01 7.35632678E-02-5.54177262E-05    3
+ 2.19116817E-08-3.71209430E-12-8.74992015E+04 1.07269473E+01                   4
+
+! Thermo group additivity estimation: group(O2s-CsCs) + group(O2s-CsCs) + group(O2s-CsCs) + group(Cs-CsOsOsH) + group(Cs-CsOsHH) + group(Cs-OsOsOsH) +
+! polycyclic(s3_4_5_ane) + radical(CsOOOring) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2rs-CrsCrs) +
+! group(O2rs-CrsCrs) + group(O2rs-CrsCrs) + group(Crs-OrsOrsCH) + group(Crs-Crs(Ors-R)HH) + group(Cs-OsOsHH) + polycyclic(PolycyclicRing)
+C3H3O3(275)             C   3H   3O   3     G   100.000  5000.000 1189.47      1
+ 5.31742813E+00 3.10448135E-02-1.56642989E-05 3.13649220E-09-2.25196447E-13    2
+-7.54233397E+04-1.03102300E+01 3.06163948E+00 1.37316173E-02 3.75682664E-05    3
+-4.42976218E-08 1.34432545E-11-7.31253008E+04 8.36819810E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-
+! CsCsOsH) + group(Cs-CsCsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + ring(Cyclopentane) +
+! Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) +
+! group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Crd) + group(O2d-Cd) + group(Crs-CrsCs(Ors-R)H) + group(Cs-CsCsHH) + group(Crs-Crs(Ors-R)HH) +
+! group(Cs-Cs(Os-R)HH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + ring(1,3-Dioxolane)
+C6H7LiO6(309)           C   6H   7Li  1O   6G   100.000  5000.000 1031.88      1
+ 2.29151980E+01 3.69712553E-02-1.60357207E-05 3.18062446E-09-2.34624741E-13    2
+-1.77502999E+05-1.08000381E+02-5.66645763E-01 7.81163564E-02-3.33780577E-06    3
+-5.18687484E-08 2.44520833E-11-1.70001331E+05 1.88905170E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-(Cds-O2d)CsOsH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) +
+! ring(Cyclopentane) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) +
+! group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Crd) + group(Cs-(Cds-O2d)Cs(Os-R)H) + group(Crs-
+! Crs(Ors-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdCrsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + ring(1,3-Dioxolane)
+C6H7LiO6(333)           C   6H   7Li  1O   6G   100.000  5000.000  995.92      1
+ 2.38989273E+01 3.48036532E-02-1.42453652E-05 2.85237036E-09-2.15778895E-13    2
+-1.61268150E+05-1.12285513E+02-1.76425105E-01 6.36153996E-02 4.46028932E-05    3
+-1.04981383E-07 4.40333270E-11-1.53106140E+05 2.06675621E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(Cs-CsCsOsH) + group(Cs-CsCsHH) + group(Cs-CsOsHH) +
+! group(Cs-CsHHH) + group(Cds-OdOsOs) + ring(Cyclopentane) + radical(RCCJ) + Solvation correction with ethylene carbonate as solvent and solute
+! estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2d-Crd) + group(Crs-CrsCs(Ors-R)H) + group(Cs-CsCsHH) + group(Crs-
+! Crs(Ors-R)HH) + group(Cs-CsHHH) + group(Cds-OdOsOs) + ring(1,3-Dioxolane)
+C5H7O3(338)             C   5H   7O   3     G   100.000  5000.000  966.13      1
+ 1.75032579E+01 2.15662659E-02-7.43446523E-06 1.47744270E-09-1.16355330E-13    2
+-5.80191788E+04-6.95685095E+01 1.71563130E+00 2.59048896E-02 8.05780176E-05    3
+-1.24635229E-07 4.94354428E-11-5.21205282E+04 2.07933161E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-O2d)(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd))
+! + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-OCOdO) + radical(CCsJO) + Solvation
+! correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-O2d)(Cds-O2d)) + group(O2s-CsCs) +
+! group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-
+! OCH2C) + group(Li-OCOdO)
+C4H3Li2O6(377)          C   4H   3Li  2O   6G   100.000  5000.000 1079.78      1
+ 1.98294693E+01 2.76635820E-02-1.40029943E-05 2.81929191E-09-2.04191955E-13    2
+-1.63963306E+05-9.57131972E+01-6.34299141E-01 1.03471117E-01-1.19313187E-04    3
+ 6.78391354E-08-1.52582193E-11-1.59544053E+05 4.58330392E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-(Cds-O2d)CsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-
+! OCOdO) + radical(CCsJO) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) +
+! group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-(Cds-O2d)CsHH) + group(Cs-Cs(Os-R)HH) +
+! group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-OCOdO)
+C6H7Li2O6(441)          C   6H   7Li  2O   6G   100.000  5000.000  890.19      1
+ 1.28387366E+01 6.19891991E-02-3.10283363E-05 6.17119992E-09-4.42300469E-13    2
+-1.70132757E+05-5.77057898E+01-1.20769305E+00 1.25107287E-01-1.37387030E-04    3
+ 8.58255742E-08-2.28128955E-11-1.67632020E+05 8.42588478E+00                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) +
+! group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-CsOsOsH) + group(Cs-(Cds-O2d)CsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdCsOs) + group(Cds-
+! OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + ring(Cyclopentane) + Solvation correction with ethylene carbonate as solvent and solute estimated
+! using group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Cd) +
+! group(O2d-Crd) + group(O2d-Cd) + group(Crs-CrOrsOsH) + group(Cs-(Cds-O2d)CsHH) + group(Crs-Crs(Ors-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdCsOs) +
+! group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) + ring(1,3-Dioxolane)
+C7H7LiO8(516)           C   7H   7Li  1O   8G   100.000  5000.000 1223.46      1
+ 2.63013130E+01 4.66048379E-02-2.17532482E-05 4.24495173E-09-3.01697813E-13    2
+-2.24899831E+05-1.21169646E+02-1.90735895E+00 1.10841516E-01-6.61940351E-05    3
+ 9.76245963E-09 2.39163588E-12-2.15902590E+05 2.91710505E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-
+! CsCsOsH) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) +
+! group(Li-OCOdO) + ring(Cyclopentane) + Solvation correction with ethylene carbonate as solvent and solute estimated using group(O2s-Cs(Cds-O2d)) +
+! group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Crd) + group(O2d-Cd) + group(Crs-CrsCs(Ors-R)H) + group(Cs-CsCsHH) +
+! group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Crs-Crs(Ors-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdOsOs) + group(Cds-OdOsOs) + group(Li-OCOdO) +
+! ring(1,3-Dioxolane)
+C8H11LiO6(806)          C   8H  11Li  1O   6G   100.000  5000.000 1073.01      1
+ 2.62081696E+01 5.13703402E-02-2.22821516E-05 4.32158421E-09-3.11222143E-13    2
+-1.85064648E+05-1.23148747E+02-2.06331001E+00 1.10028881E-01-3.89530940E-05    3
+-2.59108669E-08 1.61897852E-11-1.76307265E+05 2.77731558E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(O2s-(Cds-Cd)(Cds-Cd)) +
+! group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-(Cds-O2d)CsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cs-CsOsHH) + group(Cds-OdCsOs) +
+! group(Cds-OdOsOs) + group(Li-OCH2C) + group(Li-OCOdO) + Solvation correction with ethylene carbonate as solvent and solute estimated using
+! group(O2s-Cs(Cds-O2d)) + group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2s-CsCs) + group(O2d-Cd) + group(O2d-Cd) + group(Cs-CsCsHH) + group(Cs-
+! CsCsHH) + group(Cs-(Cds-O2d)CsHH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cs-Cs(Os-R)HH) + group(Cds-OdCsOs) + group(Cds-OdOsOs) +
+! group(Li-OCH2C) + group(Li-OCOdO)
+C8H12Li2O6(1096)        C   8H  12Li  2O   6G   100.000  5000.000  877.46      1
+ 1.18709270E+01 8.58525943E-02-4.19623576E-05 8.27704617E-09-5.90885937E-13    2
+-1.98528553E+05-5.07719668E+01-2.22609093E+00 1.50114937E-01-1.51816672E-04    3
+ 9.17402718E-08-2.43704824E-11-1.96054620E+05 1.53952878E+01                   4
+
+! Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd)) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsCsHH) +
+! group(Cs-CsCsHH) + group(Cs-CsOsHH) + group(Cs-CsHHH) + group(Cds-OdOsOs) + group(Li-OCOdO) + Solvation correction with ethylene carbonate as solvent
+! and solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Cd) + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsCsHH) +
+! group(Cs-CsCsHH) + group(Cs-Cs(Os-R)HH) + group(Cs-CsHHH) + group(Cds-OdOsOs) + group(Li-OCOdO)
+C7H13LiO3(1126)         C   7H  13Li  1O   3G   100.000  5000.000 1390.56      1
+ 1.47890038E+01 5.87010200E-02-2.65771630E-05 5.04930415E-09-3.51381674E-13    2
+-1.22750752E+05-6.15653809E+01-5.08370216E-01 1.02704347E-01-7.40434665E-05    3
+ 2.78056639E-08-4.44258851E-12-1.18496353E+05 1.72793077E+01                   4
+
+END
+
+
+
+REACTIONS    KCAL/MOLE   MOLES
+
+! Reaction index: Chemkin #1; RMG #45
+! Library reaction: LithiumPrimaryKinetics
+! Flux pairs: C3H4LiO3(5), Li(4); C3H4LiO3(5), C3H4O3(2); 
+! solvation correction raised barrier by 6.153363181740133 kcal/mol and prefactor by factor of 0.002895874410993494
+C3H4LiO3(5)<=>Li(4)+C3H4O3(2)                       4.461847e+11 -0.182    11.871   
+
+! Reaction index: Chemkin #2; RMG #1
+! Library reaction: LithiumPrimaryKinetics
+! Flux pairs: C3H4LiO3(5), C3H4LiO3(6); 
+C3H4LiO3(5)<=>C3H4LiO3(6)                           4.998330e+12 0.391     14.218   
+
+! Reaction index: Chemkin #3; RMG #56
+! Template reaction: Cation_Addition_MultipleBond
+! Flux pairs: C3H4O3(2), C3H4LiO3(5); Lip(1), C3H4LiO3(5); 
+! Estimated from node Root_N-1R!H->N_2R!H-inRing
+Lip(1)+C3H4O3(2)<=>C3H4LiO3(5)                      1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #4; RMG #59
+! Template reaction: Cation_NO_Ring_Opening
+! Flux pairs: C3H4O3(2), C3H4LiO3(6); Lip(1), C3H4LiO3(6); 
+! Estimated from node Root_Ext-2R-R
+Lip(1)+C3H4O3(2)<=>C3H4LiO3(6)                      1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #5; RMG #70
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C3H4LiO3(6), C3H4LiO3(6); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C3H4LiO3(6)<=>Li(4)+C3H4LiO3(6)              1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #6; RMG #71
+! Template reaction: Cation_R_Recombination
+! Flux pairs: Lip(1), C3H4Li2O3(88); C3H4LiO3(6), C3H4Li2O3(88); 
+! Estimated from node Root_2R->C_Ext-2C-R
+Lip(1)+C3H4LiO3(6)<=>C3H4Li2O3(88)                  1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #7; RMG #89
+! Template reaction: R_Recombination
+! Flux pairs: C3H4LiO3(6), C3H4Li2O3(88); Li(4), C3H4Li2O3(88); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing
+Li(4)+C3H4LiO3(6)<=>C3H4Li2O3(88)                   1.996260e+11 0.611     0.000    
+
+! Reaction index: Chemkin #8; RMG #126
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C3H4Li2O3(88), C3H4Li2O3(88); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C3H4Li2O3(88)<=>Li(4)+C3H4Li2O3(88)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #9; RMG #2
+! Library reaction: LithiumPrimaryKinetics
+! Flux pairs: C3H4LiO3(5), C3H4LiO3(8); 
+C3H4LiO3(5)<=>C3H4LiO3(8)                           4.572850e+17 -0.786    16.509   
+
+! Reaction index: Chemkin #10; RMG #65
+! Template reaction: Cation_NO_Ring_Opening
+! Flux pairs: C3H4O3(2), C3H4LiO3(8); Lip(1), C3H4LiO3(8); 
+! Estimated from node Root
+! Multiplied by reaction path degeneracy 2.0
+! Ea raised from 50.6 to 78.2 kJ/mol to match endothermicity of reaction.
+Lip(1)+C3H4O3(2)<=>C3H4LiO3(8)                      1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #11; RMG #187
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C3H4LiO3(8), C3H4LiO3(8); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C3H4LiO3(8)<=>Li(4)+C3H4LiO3(8)              1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #12; RMG #9
+! Library reaction: LithiumPrimaryKinetics
+! Flux pairs: C3H4LiO3(6), C2H4(23); Li(4), CLi2O3(24); 
+! Fitted to 50 data points; dA = *|/ 3.36722, dn = +|- 0.167182, dEa = +|- 0.694638 kJ/mol
+Li(4)+C3H4LiO3(6)<=>CLi2O3(24)+C2H4(23)             7.829690e+21 -2.515    1.834    
+
+! Reaction index: Chemkin #13; RMG #68
+! Template reaction: Cation_Addition_MultipleBond_Disprop
+! Flux pairs: C3H4LiO3(6), C2H4(23); Lip(1), CLi2O3(24); 
+! Estimated from node Root_4R!H->C_N-2R!H->N_Ext-3R!H-R_1R!H->O_Ext-7R!H-R_N-8R!H->C
+Lip(1)+C3H4LiO3(6)<=>CLi2O3(24)+C2H4(23)            1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #14; RMG #117
+! Template reaction: Retroene
+! Flux pairs: C3H4Li2O3(88), CLi2O3(24); C3H4Li2O3(88), C2H4(23); 
+! Estimated from node Root
+C3H4Li2O3(88)<=>CLi2O3(24)+C2H4(23)                 1.697620e+27 -4.498    23.741   
+
+! Reaction index: Chemkin #15; RMG #221
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: CLi2O3(24), CLi2O3(24); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Multiplied by reaction path degeneracy 2.0
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+CLi2O3(24)<=>Li(4)+CLi2O3(24)                1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #16; RMG #53
+! Library reaction: LithiumAnalogyKinetics
+! Flux pairs: C3H4LiO3(6), C4H4Li2O6(77); C3H4LiO3(6), C2H4(23); 
+! Fitted to 50 data points; dA = *|/ 2.80611, dn = +|- 0.142081, dEa = +|- 0.590342 kJ/mol
+C3H4LiO3(6)+C3H4LiO3(6)<=>C2H4(23)+C4H4Li2O6(77)    1.603630e+16 -1.067    0.568    
+
+! Reaction index: Chemkin #17; RMG #252
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(77), C3H4LiO3(6); Lip(1), CLi2O3(24); 
+! Estimated from node Root_1NO->O_3R->C_2R->C_Ext-2C-R
+Lip(1)+C4H4Li2O6(77)<=>CLi2O3(24)+C3H4LiO3(6)       1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #18; RMG #316
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(77), C4H4Li2O6(77); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Multiplied by reaction path degeneracy 2.0
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H4Li2O6(77)<=>Li(4)+C4H4Li2O6(77)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #19; RMG #92
+! Template reaction: R_Recombination
+! Flux pairs: C3H4LiO3(6), C6H8Li2O6(103); C3H4LiO3(6), C6H8Li2O6(103); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Sp-3R!H-2R_3R!H->C_2R->C_Ext-1C-R_4R!H->C
+C3H4LiO3(6)+C3H4LiO3(6)<=>C6H8Li2O6(103)            4.218240e+14 -0.693    0.000    
+
+! Reaction index: Chemkin #20; RMG #363
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(103), C6H8Li2O6(103); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Multiplied by reaction path degeneracy 2.0
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(103)<=>Li(4)+C6H8Li2O6(103)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #21; RMG #81
+! Template reaction: H_Abstraction
+! Flux pairs: C3H4LiO3(6), C3H5LiO3(59); C3H4O3(2), C3H3O3(78); 
+! Estimated using an average for rate rule [C/H2/CsO;C_rad/H2/Cs]
+! Euclidian distance = 0
+! Multiplied by reaction path degeneracy 4.0
+! family: H_Abstraction
+C3H4O3(2)+C3H4LiO3(6)<=>C3H3O3(78)+C3H5LiO3(59)     1.700000e-05 5.010     5.010    
+
+! Reaction index: Chemkin #22; RMG #421
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C3H5LiO3(59), C3H5LiO3(59); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C3H5LiO3(59)<=>Li(4)+C3H5LiO3(59)            1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #23; RMG #198
+! Template reaction: R_Addition_MultipleBond_Disprop
+! Flux pairs: C3H4LiO3(8), C4H4Li2O6(176); C3H4LiO3(6), C2H4(23); 
+! Estimated from node Root_6R->C
+C3H4LiO3(6)+C3H4LiO3(8)<=>C2H4(23)+C4H4Li2O6(176)   1.603630e+16 -1.067    0.568    
+
+! Reaction index: Chemkin #24; RMG #285
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(176), C3H4LiO3(8); Lip(1), CLi2O3(24); 
+! Estimated from node Root_1NO->O_3R->C_2R->C_Ext-2C-R
+Lip(1)+C4H4Li2O6(176)<=>CLi2O3(24)+C3H4LiO3(8)      1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #25; RMG #598
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(176), C4H4Li2O6(176); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H4Li2O6(176)<=>Li(4)+C4H4Li2O6(176)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #26; RMG #600
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(176), C4H4Li2O6(176); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H4Li2O6(176)<=>Li(4)+C4H4Li2O6(176)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #27; RMG #621
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(176), C4H4Li2O6(176); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H4Li2O6(176)<=>Li(4)+C4H4Li2O6(176)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #28; RMG #622
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H4Li2O6(176), C4H4Li2O6(176); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H4Li2O6(176)<=>Li(4)+C4H4Li2O6(176)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #29; RMG #199
+! Template reaction: R_Recombination
+! Flux pairs: C3H4LiO3(8), C6H8Li2O6(177); C3H4LiO3(6), C6H8Li2O6(177); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-2R-R
+C3H4LiO3(6)+C3H4LiO3(8)<=>C6H8Li2O6(177)            2.139470e+14 -0.514    0.000    
+
+! Reaction index: Chemkin #30; RMG #708
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(177), C6H8Li2O6(177); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(177)<=>Li(4)+C6H8Li2O6(177)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #31; RMG #710
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(177), C6H8Li2O6(177); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(177)<=>Li(4)+C6H8Li2O6(177)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #32; RMG #735
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(177), C6H8Li2O6(177); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(177)<=>Li(4)+C6H8Li2O6(177)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #33; RMG #736
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(177), C6H8Li2O6(177); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(177)<=>Li(4)+C6H8Li2O6(177)        1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #34; RMG #752
+! Template reaction: H_Abstraction
+! Flux pairs: C3H4LiO3(6), C3H5LiO3(59); C6H8Li2O6(177), C6H7Li2O6(441); 
+! Estimated using an average for rate rule [C/H2/CsO;C_rad/H2/Cs]
+! Euclidian distance = 0
+! Multiplied by reaction path degeneracy 2.0
+! family: H_Abstraction
+C3H4LiO3(6)+C6H8Li2O6(177)<=>C3H5LiO3(59)+C6H7Li2O6(441) 8.500000e-06 5.010     5.010    
+
+! Reaction index: Chemkin #35; RMG #788
+! Template reaction: H_Abstraction
+! Flux pairs: C3H3O3(78), C3H4O3(2); C6H8Li2O6(177), C6H7Li2O6(441); 
+! Estimated using template [C/H2/CsO;C_sec_rad] for rate rule [C/H2/CsO;C_rad/H/CsO]
+! Euclidian distance = 2.0
+! Multiplied by reaction path degeneracy 2.0
+! family: H_Abstraction
+C3H3O3(78)+C6H8Li2O6(177)<=>C3H4O3(2)+C6H7Li2O6(441) 8.832667e-05 4.540     6.405    
+
+! Reaction index: Chemkin #36; RMG #820
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H7Li2O6(441), C6H7Li2O6(441); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H7Li2O6(441)<=>Li(4)+C6H7Li2O6(441)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #37; RMG #839
+! Template reaction: R_Addition_MultipleBond_Disprop
+! Flux pairs: C6H7Li2O6(441), C7H7LiO8(516); C3H3O3(78), C2H3LiO(14); 
+! Estimated from node Root
+C3H3O3(78)+C6H7Li2O6(441)<=>C2H3LiO(14)+C7H7LiO8(516) 8.786270e+22 -2.907    3.314    
+
+! Reaction index: Chemkin #38; RMG #896
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C7H7LiO8(516), C7H7LiO8(516); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C7H7LiO8(516)<=>Li(4)+C7H7LiO8(516)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #39; RMG #902
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C2H3LiO(14), C2H3LiO(14); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C2H3LiO(14)<=>Li(4)+C2H3LiO(14)              1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #40; RMG #632
+! Template reaction: H_Abstraction
+! Flux pairs: C3H4LiO3(6), C3H5LiO3(59); C4H4Li2O6(176), C4H3Li2O6(377); 
+! Estimated using an average for rate rule [C/H2/CsO;C_rad/H2/Cs]
+! Euclidian distance = 0
+! Multiplied by reaction path degeneracy 2.0
+! family: H_Abstraction
+C3H4LiO3(6)+C4H4Li2O6(176)<=>C3H5LiO3(59)+C4H3Li2O6(377) 8.500000e-06 5.010     5.010    
+
+! Reaction index: Chemkin #41; RMG #661
+! Template reaction: H_Abstraction
+! Flux pairs: C3H3O3(78), C3H4O3(2); C4H4Li2O6(176), C4H3Li2O6(377); 
+! Estimated using template [C/H2/CsO;C_sec_rad] for rate rule [C/H2/CsO;C_rad/H/CsO]
+! Euclidian distance = 2.0
+! Multiplied by reaction path degeneracy 2.0
+! family: H_Abstraction
+C3H3O3(78)+C4H4Li2O6(176)<=>C3H4O3(2)+C4H3Li2O6(377) 8.832667e-05 4.540     6.405    
+
+! Reaction index: Chemkin #42; RMG #841
+! Template reaction: H_Abstraction
+! Flux pairs: C6H8Li2O6(177), C6H7Li2O6(441); C4H3Li2O6(377), C4H4Li2O6(176); 
+! Estimated using template [C/H2/CsO;C_sec_rad] for rate rule [C/H2/CsO;C_rad/H/CsO]
+! Euclidian distance = 2.0
+! Multiplied by reaction path degeneracy 2.0
+! family: H_Abstraction
+C4H3Li2O6(377)+C6H8Li2O6(177)<=>C4H4Li2O6(176)+C6H7Li2O6(441) 8.832667e-05 4.540     6.405    
+
+! Reaction index: Chemkin #43; RMG #1233
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H3Li2O6(377), C4H3Li2O6(377); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H3Li2O6(377)<=>Li(4)+C4H3Li2O6(377)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #44; RMG #561
+! Template reaction: R_Recombination
+! Flux pairs: C3H3O3(78), C6H6O6(106); C3H3O3(78), C6H6O6(106); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_1C-inRing_Ext-1C-R_Sp-3R!H-1C_2R-inRing
+C3H3O3(78)+C3H3O3(78)<=>C6H6O6(106)                 2.500000e+13 -0.000    0.000    
+
+! Reaction index: Chemkin #45; RMG #511
+! Template reaction: R_Addition_MultipleBond
+! Flux pairs: C3H3O3(78), C5H7O3(338); C2H4(23), C5H7O3(338); 
+! Estimated using template [Cds-HH_Cds-HH;CsJ] for rate rule [Cds-HH_Cds-HH;CsJ-OsCsH]
+! Euclidian distance = 1.0
+! Multiplied by reaction path degeneracy 2.0
+! family: R_Addition_MultipleBond
+C2H4(23)+C3H3O3(78)<=>C5H7O3(338)                   1.249132e+04 2.281     6.776    
+
+! Reaction index: Chemkin #46; RMG #504
+! Template reaction: R_Recombination
+! Flux pairs: C3H3O3(78), C6H7LiO6(333); C3H4LiO3(8), C6H7LiO6(333); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_1C-inRing_Ext-1C-R_Sp-3R!H-1C_N-2R-inRing_Ext-2R-R
+C3H3O3(78)+C3H4LiO3(8)<=>C6H7LiO6(333)              1.767930e+16 -1.003    0.000    
+
+! Reaction index: Chemkin #47; RMG #1423
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H7LiO6(333), C6H7LiO6(333); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H7LiO6(333)<=>Li(4)+C6H7LiO6(333)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #48; RMG #467
+! Template reaction: R_Recombination
+! Flux pairs: C3H3O3(78), C6H7LiO6(309); C3H4LiO3(6), C6H7LiO6(309); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_1C-inRing_Ext-1C-R_Sp-3R!H-1C_N-2R-inRing_Ext-2R-R
+C3H3O3(78)+C3H4LiO3(6)<=>C6H7LiO6(309)              1.767930e+16 -1.003    0.000    
+
+! Reaction index: Chemkin #49; RMG #1331
+! Template reaction: R_Addition_MultipleBond_Disprop
+! Flux pairs: C5H7O3(338), C6H7LiO6(309); C3H4LiO3(6), C2H4(23); 
+! Estimated from node Root_6R->C
+C3H4LiO3(6)+C5H7O3(338)<=>C2H4(23)+C6H7LiO6(309)    1.603630e+16 -1.067    0.568    
+
+! Reaction index: Chemkin #50; RMG #1349
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H7LiO6(309), C5H7O3(338); Lip(1), CLi2O3(24); 
+! Estimated from node Root_1NO->O_3R->C_2R->C_Ext-2C-R
+Lip(1)+C6H7LiO6(309)<=>CLi2O3(24)+C5H7O3(338)       1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #51; RMG #1541
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H7LiO6(309), C6H7LiO6(309); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H7LiO6(309)<=>Li(4)+C6H7LiO6(309)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #52; RMG #409
+! Template reaction: Intra_R_Add_Endocyclic
+! Flux pairs: C3H3O3(78), C3H3O3(275); 
+! Estimated from node Backbone1_2R!H-inRing_Ext-1R!H-R
+C3H3O3(78)<=>C3H3O3(275)                            1.503000e+11 0.221     0.000    
+
+! Reaction index: Chemkin #53; RMG #39
+! Library reaction: LithiumPrimaryKinetics
+! Flux pairs: C3H4LiO3(6), C3H5LiO3(59); C[CH2](27), C2H4(23); 
+! Fitted to 50 data points; dA = *|/ 2.80611, dn = +|- 0.142081, dEa = +|- 0.590342 kJ/mol
+C[CH2](27)+C3H4LiO3(6)<=>C2H4(23)+C3H5LiO3(59)      1.603630e+16 -1.067    0.568    
+
+! Reaction index: Chemkin #54; RMG #418
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C3H5LiO3(59), C[CH2](27); Lip(1), CLi2O3(24); 
+! Estimated from node Root_1NO->O_3R->C_2R->C_Ext-2C-R
+Lip(1)+C3H5LiO3(59)<=>CLi2O3(24)+C[CH2](27)         1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #55; RMG #208
+! Template reaction: R_Recombination
+! Flux pairs: C3H4LiO3(8), C6H8Li2O6(184); C3H4LiO3(8), C6H8Li2O6(184); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-2R-R
+C3H4LiO3(8)+C3H4LiO3(8)<=>C6H8Li2O6(184)            1.069735e+14 -0.514    0.000    
+
+! Reaction index: Chemkin #56; RMG #1788
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(184), C6H8Li2O6(184); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Multiplied by reaction path degeneracy 2.0
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C6H8Li2O6(184)<=>Li(4)+C6H8Li2O6(184)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #57; RMG #247
+! Template reaction: R_Addition_MultipleBond
+! Flux pairs: C3H4LiO3(6), C5H8LiO3(201); C2H4(23), C5H8LiO3(201); 
+! From training reaction 2903 used for Cds-HH_Cds-HH;CsJ-CsHH
+! Exact match found for rate rule [Cds-HH_Cds-HH;CsJ-CsHH]
+! Euclidian distance = 0
+! Multiplied by reaction path degeneracy 2.0
+! family: R_Addition_MultipleBond
+C2H4(23)+C3H4LiO3(6)<=>C5H8LiO3(201)                3.628000e+01 2.997     6.866    
+
+! Reaction index: Chemkin #58; RMG #360
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C6H8Li2O6(103), C5H8LiO3(201); Lip(1), CLi2O3(24); 
+! Estimated from node Root_1NO->O_3R->C_2R->C_Ext-2C-R
+! Multiplied by reaction path degeneracy 2.0
+Lip(1)+C6H8Li2O6(103)<=>CLi2O3(24)+C5H8LiO3(201)    1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #59; RMG #390
+! Template reaction: R_Addition_MultipleBond_Disprop
+! Flux pairs: C5H8LiO3(201), C6H8Li2O6(103); C3H4LiO3(6), C2H4(23); 
+! Estimated from node Root_6R->C
+C3H4LiO3(6)+C5H8LiO3(201)<=>C2H4(23)+C6H8Li2O6(103) 1.603630e+16 -1.067    0.568    
+
+! Reaction index: Chemkin #60; RMG #1869
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C5H8LiO3(201), C5H8LiO3(201); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C5H8LiO3(201)<=>Li(4)+C5H8LiO3(201)          1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #61; RMG #1868
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C5H8LiO3(201), C4H8LiO(69); Lip(1), CLiO2(87); 
+! Estimated from node Root_1NO->O_Ext-3R-R_2R->C
+Lip(1)+C5H8LiO3(201)<=>CLiO2(87)+C4H8LiO(69)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #62; RMG #1978
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C4H8LiO(69), C4H8LiO(69); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C4H8LiO(69)<=>Li(4)+C4H8LiO(69)              1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #63; RMG #1964
+! Template reaction: R_Recombination
+! Flux pairs: C5H8LiO3(201), C7H13LiO3(1126); C[CH2](27), C7H13LiO3(1126); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R
+C[CH2](27)+C5H8LiO3(201)<=>C7H13LiO3(1126)          3.187950e+16 -1.177    0.000    
+
+! Reaction index: Chemkin #64; RMG #2228
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C7H13LiO3(1126), C7H13LiO3(1126); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C7H13LiO3(1126)<=>Li(4)+C7H13LiO3(1126)      1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #65; RMG #1332
+! Template reaction: R_Recombination
+! Flux pairs: C5H7O3(338), C8H11LiO6(806); C3H4LiO3(6), C8H11LiO6(806); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R
+C3H4LiO3(6)+C5H7O3(338)<=>C8H11LiO6(806)            3.187950e+16 -1.177    0.000    
+
+! Reaction index: Chemkin #66; RMG #1928
+! Template reaction: R_Recombination
+! Flux pairs: C5H8LiO3(201), C8H11LiO6(806); C3H3O3(78), C8H11LiO6(806); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_1C-inRing_Ext-1C-R_Sp-3R!H-1C_N-2R-inRing_Ext-2R-R
+C3H3O3(78)+C5H8LiO3(201)<=>C8H11LiO6(806)           1.767930e+16 -1.003    0.000    
+
+! Reaction index: Chemkin #67; RMG #2412
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C8H11LiO6(806), C8H11LiO6(806); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C8H11LiO6(806)<=>Li(4)+C8H11LiO6(806)        1.000e+00 0.000     0.000    
+
+! Reaction index: Chemkin #68; RMG #1898
+! Template reaction: R_Recombination
+! Flux pairs: C5H8LiO3(201), C8H12Li2O6(1096); C3H4LiO3(8), C8H12Li2O6(1096); 
+! Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-2R-R
+C3H4LiO3(8)+C5H8LiO3(201)<=>C8H12Li2O6(1096)        2.139470e+14 -0.514    0.000    
+
+! Reaction index: Chemkin #69; RMG #2576
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C8H12Li2O6(1096), C8H12Li2O6(1096); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C8H12Li2O6(1096)<=>Li(4)+C8H12Li2O6(1096)    1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #70; RMG #2578
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C8H12Li2O6(1096), C8H12Li2O6(1096); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C8H12Li2O6(1096)<=>Li(4)+C8H12Li2O6(1096)    1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #71; RMG #2605
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C8H12Li2O6(1096), C8H12Li2O6(1096); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_Ext-3R-R
+! Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C8H12Li2O6(1096)<=>Li(4)+C8H12Li2O6(1096)    1.000e+00 0.000     0.000    
+DUPLICATE
+
+! Reaction index: Chemkin #72; RMG #2606
+! Template reaction: Cation_NO_Substitution
+! Flux pairs: C8H12Li2O6(1096), C8H12Li2O6(1096); Lip(1), Li(4); 
+! Estimated from node Root_1NO->O_3R->C
+! Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.
+Lip(1)+C8H12Li2O6(1096)<=>Li(4)+C8H12Li2O6(1096)    1.000e+00 0.000     0.000    
+DUPLICATE
+
+END
+

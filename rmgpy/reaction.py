@@ -1381,6 +1381,7 @@ class Reaction:
                         reactant_elements[atom.element] += 1
             elif isinstance(reactant, Molecule):
                 molecule = reactant
+
                 for atom in molecule.atoms:
                     reactants_net_charge += atom.charge
                     reactant_elements[atom.element] += 1
@@ -1389,6 +1390,7 @@ class Reaction:
                     if not isinstance(atom, CuttingLabel):
                         reactants_net_charge += atom.charge
                         reactant_elements[atom.element] += 1
+
         for product in self.products:
             if isinstance(product, Species):
                 molecule = product.molecule[0]
@@ -1398,6 +1400,7 @@ class Reaction:
                         product_elements[atom.element] += 1
             elif isinstance(product, Molecule):
                 molecule = product
+                
                 for atom in molecule.atoms:
                     products_net_charge += atom.charge
                     product_elements[atom.element] += 1
@@ -1406,7 +1409,7 @@ class Reaction:
                     if not isinstance(atom, CuttingLabel):
                         products_net_charge += atom.charge
                         product_elements[atom.element] += 1
-
+            
         for element in element_list:
             if reactant_elements[element] != product_elements[element]:
                 return False

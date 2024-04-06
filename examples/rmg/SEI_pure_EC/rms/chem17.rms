@@ -1,0 +1,881 @@
+Interfaces:
+- {}
+Phases:
+- Species:
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: Ar'
+    name: Ar
+    radicalelectrons: 0
+    smiles: '[Ar]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - -801.1931979459378
+        - 3.1621538067211854
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 77695.88302506441
+        - 359.81517204891236
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: He'
+    name: He
+    radicalelectrons: 0
+    smiles: '[He]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - -117.01737759871322
+        - 0.762337557818655
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 78380.05884541164
+        - 357.4153558000098
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: Ne'
+    name: Ne
+    radicalelectrons: 0
+    smiles: '[Ne]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - -224.87415459552187
+        - 3.0232283928783126
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 78272.20206841483
+        - 359.6762466350695
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: primaryThermoLibrary + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: N2'
+    name: N2
+    radicalelectrons: 0
+    smiles: N#N
+    thermo:
+      polys:
+      - Tmax: 1476.6035576546144
+        Tmin: 100.0
+        coefs:
+        - 3.541357825681773
+        - -0.0006933508913992505
+        - 2.1009603166257027e-06
+        - -1.289667308474215e-09
+        - 2.585793107760845e-13
+        - -908.5717929112618
+        - 2.0642042283343733
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1476.6035576546144
+        coefs:
+        - 2.8332321666260896
+        - 0.0016000849412844684
+        - -6.099396341300967e-07
+        - 1.0634048328341487e-10
+        - -6.908448483162686e-15
+        - -740.3490118271209
+        - 5.617991101052929
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li+]'
+    name: Lip
+    radicalelectrons: 0
+    smiles: '[Li+]'
+    thermo:
+      polys:
+      - Tmax: 1963.9111918564479
+        Tmin: 100.0
+        coefs:
+        - 2.500002405444192
+        - 1.657916206169566e-15
+        - -3.5195037573777435e-18
+        - 2.5031085403871695e-21
+        - -5.521952537251367e-25
+        - -2153.7587520381408
+        - -65.21376415731355
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1963.9111918564479
+        coefs:
+        - 2.50000240542476
+        - 2.919803783414917e-14
+        - -1.5359741897789922e-17
+        - 3.4012575558441545e-21
+        - -2.6921741562361376e-25
+        - -2153.7587520281854
+        - -65.21376415720077
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: O=C1OCCO1'
+    name: ethylene-carbonate
+    radicalelectrons: 0
+    smiles: O=C1OCCO1
+    thermo:
+      polys:
+      - Tmax: 1044.3178331036124
+        Tmin: 100.0
+        coefs:
+        - 2.824185324408398
+        - 0.016598949588873892
+        - 3.130293970152806e-05
+        - -4.584995683748707e-08
+        - 1.652206510341059e-11
+        - -69651.81951134981
+        - 7.230747065424122
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1044.3178331036124
+        coefs:
+        - 8.031095874318911
+        - 0.020603547018144843
+        - -8.847153281090267e-06
+        - 1.7397728943050242e-09
+        - -1.2723247446362454e-13
+        - -72045.2579734738
+        - -24.367806987246087
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li]'
+    name: Li
+    radicalelectrons: 1
+    smiles: '[Li]'
+    thermo:
+      polys:
+      - Tmax: 1963.9111918564479
+        Tmin: 100.0
+        coefs:
+        - 2.500002405444192
+        - 1.657916206169566e-15
+        - -3.5195037573777435e-18
+        - 2.5031085403871695e-21
+        - -5.521952537251367e-25
+        - 17176.37205928695
+        - 0.14162009019695426
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1963.9111918564479
+        coefs:
+        - 2.50000240542476
+        - 2.919803783414917e-14
+        - -1.5359741897789922e-17
+        - 3.4012575558441545e-21
+        - -2.6921741562361376e-25
+        - 17176.372059296904
+        - 0.14162009030973563
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li]O[C]1OCCO1'
+    name: '[Li]O[C]1OCCO1'
+    radicalelectrons: 1
+    smiles: '[Li]O[C]1OCCO1'
+    thermo:
+      polys:
+      - Tmax: 997.5677102862794
+        Tmin: 100.0
+        coefs:
+        - 2.741221779807751
+        - 0.031660869945909234
+        - 9.34592376744797e-06
+        - -3.3728339520270554e-08
+        - 1.4599815532557722e-11
+        - -66998.55300571566
+        - -2.0737867177388507
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 997.5677102862794
+        coefs:
+        - 11.298877844495596
+        - 0.020542594149133377
+        - -8.814549460409232e-06
+        - 1.717223262388884e-09
+        - -1.2465462607774363e-13
+        - -69860.07676020515
+        - -49.1235382183606
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li]OC(=O)OC[CH2]'
+    name: '[Li]OC(=O)OC[CH2]'
+    radicalelectrons: 1
+    smiles: '[Li]OC(=O)OC[CH2]'
+    thermo:
+      polys:
+      - Tmax: 1129.6716864317686
+        Tmin: 100.0
+        coefs:
+        - 5.87498273124074
+        - 0.025702979380326597
+        - 5.4905093185292485e-06
+        - -2.057365113801641e-08
+        - 7.970786927774398e-12
+        - -81525.47180245839
+        - -12.06641012874871
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1129.6716864317686
+        coefs:
+        - 13.687458599947336
+        - 0.016585399478483368
+        - -7.027719716843437e-06
+        - 1.3459668335517427e-09
+        - -9.609306128135537e-14
+        - -84473.91123745641
+        - -55.9471501788752
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(O2s-Cs(Cds-O2d)) + group(O2s-(Cds-Cd)(Cds-Cd))
+      + group(Cs-CsOsHH) + group(Cs-CsCsCsCs) + group(Cds-OdOsOs) + group(Li-C) +
+      group(Li-OCOdO) + Solvation correction with ethylene carbonate as solvent and
+      solute estimated using group(O2s-Cs(Cds-O2d)) + group(O2s-CsCs) + group(O2d-Cd)
+      + group(Cs-Cs(Os-R)HH) + group(Cs-CsCsCsCs) + group(Cds-OdOsOs) + group(Li-C)
+      + group(Li-OCOdO)'
+    name: '[Li]CCOC(=O)O[Li]'
+    radicalelectrons: 0
+    smiles: '[Li]CCOC(=O)O[Li]'
+    thermo:
+      polys:
+      - Tmax: 743.8732157404232
+        Tmin: 100.0
+        coefs:
+        - 0.9887843821797428
+        - 0.07228681773885157
+        - -9.335895666216735e-05
+        - 7.150069129117882e-08
+        - -2.3116149013698108e-11
+        - -99579.87309890274
+        - -3.7951724227077572
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 743.8732157404232
+        coefs:
+        - 7.994485267070315
+        - 0.034618781159206295
+        - -1.740933053437351e-05
+        - 3.4400909688419557e-09
+        - -2.4451596364803323e-13
+        - -100622.23896525567
+        - -35.52139004825308
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li]OCCO[C]=O'
+    name: '[Li]OCCO[C]=O'
+    radicalelectrons: 1
+    smiles: '[Li]OCCO[C]=O'
+    thermo:
+      polys:
+      - Tmax: 1082.785085090714
+        Tmin: 100.0
+        coefs:
+        - 6.171504058665174
+        - 0.01864264620291661
+        - 2.2970653756503467e-05
+        - -3.653287050506858e-08
+        - 1.3072864354217667e-11
+        - -62567.02071477195
+        - -15.852829392668003
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1082.785085090714
+        coefs:
+        - 12.216794310600696
+        - 0.01862815877206257
+        - -7.926611556142668e-06
+        - 1.5261442540945814e-09
+        - -1.095070454014822e-13
+        - -65184.47149245924
+        - -51.54005016430214
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: ethene'
+    name: C=C
+    radicalelectrons: 0
+    smiles: C=C
+    thermo:
+      polys:
+      - Tmax: 941.5150304329593
+        Tmin: 100.0
+        coefs:
+        - 3.948157702381456
+        - -0.004900949403423382
+        - 4.200331236364376e-05
+        - -4.582527626003139e-08
+        - 1.5906054541387556e-11
+        - 4235.068719007663
+        - 1.5903219712154433
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 941.5150304329593
+        coefs:
+        - 2.5332968183998057
+        - 0.012942108674196765
+        - -5.274402883241354e-06
+        - 9.987469749053417e-10
+        - -7.130774042480342e-14
+        - 3977.0643997162056
+        - 5.5459253676674525
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library corrected for liquid phase: LithiumPrimaryThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using Solute
+      library: [Li]OC(=O)O[Li]'
+    name: '[Li]OC(=O)O[Li]'
+    radicalelectrons: 0
+    smiles: '[Li]OC(=O)O[Li]'
+    thermo:
+      polys:
+      - Tmax: 1337.2845677681978
+        Tmin: 100.0
+        coefs:
+        - 2.233240148727252
+        - 0.03367783872023343
+        - -3.490916963198091e-05
+        - 1.6864113327934954e-08
+        - -3.113230147199857e-12
+        - -125848.45246457355
+        - -13.965936841482472
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1337.2845677681978
+        coefs:
+        - 12.109662690259544
+        - 0.004135693768153016
+        - -1.7719813742292509e-06
+        - 3.4423793279292883e-10
+        - -2.4861413717846065e-14
+        - -128489.9322178468
+        - -64.4843198705188
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: gas
+- Species:
+  - adjlist: '1 X u0 p0 c0
+
+      '
+    comment: 'Thermo library corrected for liquid phase: electrocatLiThermo + Solvation
+      correction with ethylene carbonate as solvent and solute estimated using '
+    name: vacantX
+    radicalelectrons: 0
+    smiles: '[Pt]'
+    thermo:
+      polys:
+      - Tmax: 1530.565154236656
+        Tmin: 100.0
+        coefs:
+        - 0.00142408942421923
+        - -1.9013991006720932e-06
+        - -3.521875076674216e-09
+        - 5.5255336611737474e-12
+        - -1.7858465938591354e-15
+        - -503.15799681905787
+        - -1.9117296226298135
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1530.565154236656
+        coefs:
+        - -0.017576735888376688
+        - 2.9603233525005808e-05
+        - -1.660748007822803e-08
+        - 3.4764953830667818e-12
+        - -1.8549657915946134e-16
+        - -495.2153807591995
+        - -1.805028316701525
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 O u0 p2 c0 {4,S} {5,S}
+
+      2 O u0 p2 c0 {4,S} {6,S}
+
+      3 O u0 p2 c0 {4,D}
+
+      4 C u0 p0 c0 {1,S} {2,S} {3,D}
+
+      5 X u0 p0 c0 {1,S}
+
+      6 X u0 p0 c0 {2,S}
+
+      '
+    comment: 'Gas phase thermo for CO3t1 from Thermo library corrected for liquid
+      phase: primaryThermoLibrary. Adsorption correction: + Thermo group additivity
+      estimation: adsorptionLi(O*) + H298(adsorptionLi(O*)) + Solvation correction
+      with ethylene carbonate as solvent and solute estimated using group(O2s-(Cds-O2d)H)
+      + group(O2s-(Cds-O2d)H) + group(O2d-Cd) + group(Cds-OdOsOs) + radical(RC(O)OJ)
+      + radical(RC(O)OJ)'
+    name: CO3X2
+    radicalelectrons: 0
+    smiles: O=C(O[Pt])O[Pt]
+    thermo:
+      polys:
+      - Tmax: 946.9997930235824
+        Tmin: 100.0
+        coefs:
+        - 3.2020139601729842
+        - 0.011370882606057087
+        - 8.316701477922827e-06
+        - -2.31132138854926e-08
+        - 1.066173774889338e-11
+        - -87827.3509821042
+        - -15.732531387633104
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 946.9997930235824
+        coefs:
+        - 9.293613423335866
+        - 0.0011319109356910388
+        - -2.4477303941332934e-09
+        - 1.6896140411737954e-11
+        - -4.506698730160711e-15
+        - -89675.72845787751
+        - -48.45677436828678
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1  O u0 p2 c0 {4,S} {6,S}
+
+      2  O u0 p2 c0 {5,S} {6,S}
+
+      3  O u0 p2 c0 {6,D}
+
+      4  C u0 p0 c0 {1,S} {5,S} {7,S} {8,S}
+
+      5  C u0 p0 c0 {2,S} {4,S} {9,S} {10,S}
+
+      6  C u0 p0 c0 {1,S} {2,S} {3,D}
+
+      7  H u0 p0 c0 {4,S}
+
+      8  H u0 p0 c0 {4,S}
+
+      9  H u0 p0 c0 {5,S}
+
+      10 X u0 p0 c0 {5,S}
+
+      '
+    comment: 'Gas phase thermo for O=C1O[CH]CO1 from Thermo library corrected for
+      liquid phase: LithiumPrimaryThermo + radical(CCsJOC(O)). Adsorption correction:
+      + Thermo group additivity estimation: adsorptionLi(C*) + Solvation correction
+      with ethylene carbonate as solvent and solute estimated using Solute library:
+      O=C1OCCO1'
+    name: O=C1OCC([Pt])O1
+    radicalelectrons: 0
+    smiles: O=C1OCC([Pt])O1
+    thermo:
+      polys:
+      - Tmax: 977.939934772703
+        Tmin: 100.0
+        coefs:
+        - 2.590122398882273
+        - 0.01671144660552132
+        - 4.417827389573776e-05
+        - -6.975100077510165e-08
+        - 2.7544836329226772e-11
+        - -103245.04219811599
+        - -23.76329551949911
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 977.939934772703
+        coefs:
+        - 12.214789294622216
+        - 0.0130217646302944
+        - -4.885697435043591e-06
+        - 1.0013416292980837e-09
+        - -7.892669492238315e-14
+        - -106833.54622981348
+        - -78.70464706262165
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - adjlist: '1 H u0 p0 c0 {2,S}
+
+      2 X u0 p0 c0 {1,S}
+
+      '
+    comment: 'Gas phase thermo for H from Thermo library corrected for liquid phase:
+      primaryThermoLibrary. Adsorption correction: + Thermo group additivity estimation:
+      adsorptionLi(H*) + Solvation correction with ethylene carbonate as solvent and
+      solute estimated using Solute library: [H]'
+    name: '[PtH]'
+    radicalelectrons: 0
+    smiles: '[PtH]'
+    thermo:
+      polys:
+      - Tmax: 4996.8587663517765
+        Tmin: 100.0
+        coefs:
+        - 2.4999999999924403
+        - 4.307320869777409e-14
+        - -5.2891250986645915e-17
+        - 2.104574876887699e-20
+        - -2.571397379523338e-24
+        - -6554.510232559908
+        - -2.9311223069488213
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 4996.8587663517765
+        coefs:
+        - -48.68622313294151
+        - 0.01907280123275127
+        - 8.492690330099647e-07
+        - -9.904856591195434e-10
+        - 9.344191769757742e-14
+        - 71942.56599045044
+        - 353.72189593524234
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: surface
+Reactions:
+- comment: solvation correction raised barrier by 6.153363181740133 kcal/mol and prefactor
+    by factor of 0.002895874410993494
+  electronchange: 0
+  kinetics:
+    A: 446184745748.2336
+    Ea: 49667.57155240072
+    n: -0.182294
+    type: Arrhenius
+  products:
+  - Li
+  - ethylene-carbonate
+  radicalchange: 0
+  reactants:
+  - '[Li]O[C]1OCCO1'
+  type: ElementaryReaction
+- comment: ''
+  electronchange: 0
+  kinetics:
+    A: 4998330000000.0
+    Ea: 59486.3
+    n: 0.39066
+    type: Arrhenius
+  products:
+  - '[Li]OC(=O)OC[CH2]'
+  radicalchange: 0
+  reactants:
+  - '[Li]O[C]1OCCO1'
+  type: ElementaryReaction
+- comment: Estimated from node Root_N-1R!H->N_2R!H-inRing
+  electronchange: 1
+  kinetics:
+    A: 303.68
+    Ea: 60446.51667062556
+    n: 1.59181
+    q: 0.0
+    type: Arrheniusq
+  products:
+  - '[Li]O[C]1OCCO1'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - ethylene-carbonate
+  type: ElementaryReaction
+- comment: Estimated from node Root_Ext-2R-R
+  electronchange: 1
+  kinetics:
+    A: 295357.0
+    Ea: 67486.0
+    n: 1.03263
+    q: 0.166667
+    type: Arrheniusq
+  products:
+  - '[Li]OC(=O)OC[CH2]'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - ethylene-carbonate
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_1NO->O_3R->C
+
+    Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.'
+  electronchange: 1
+  kinetics:
+    A: 0.0537704
+    Ea: 160719.8313870998
+    n: 2.99372
+    q: 0.166667
+    type: Arrheniusq
+  products:
+  - Li
+  - '[Li]OC(=O)OC[CH2]'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - '[Li]OC(=O)OC[CH2]'
+  type: ElementaryReaction
+- comment: 'Exact match found for rate rule [C-H;VacantSite1;VacantSite2]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: Surface_Adsorption_Dissociative'
+  electronchange: 0
+  kinetics:
+    A: 0.4
+    Ea: 0.0
+    n: 0.0
+    type: StickingCoefficient
+  products:
+  - '[PtH]'
+  - O=C1OCC([Pt])O1
+  radicalchange: 0
+  reactants:
+  - vacantX
+  - vacantX
+  - ethylene-carbonate
+  type: ElementaryReaction
+- comment: Estimated from node Root_2R->C_Ext-2C-R
+  electronchange: 1
+  kinetics:
+    A: 1730000.0
+    beta: 12000000000.0
+    lmbd_i_coefs:
+    - 51072.9
+    - 0.770449
+    - 0.00461441
+    - -2.38037e-06
+    lmbd_o: 0.0
+    n: 2.0
+    type: Marcus
+    wp: 0.0
+    wr: 0.0
+  products:
+  - '[Li]CCOC(=O)O[Li]'
+  radicalchange: -1
+  reactants:
+  - Lip
+  - '[Li]OC(=O)OC[CH2]'
+  type: ElementaryReaction
+- comment: Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing
+  electronchange: 0
+  kinetics:
+    A: 199626.0
+    Ea: 0.0
+    n: 0.610916
+    type: Arrhenius
+  products:
+  - '[Li]CCOC(=O)O[Li]'
+  radicalchange: -2
+  reactants:
+  - Li
+  - '[Li]OC(=O)OC[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_1NO->O_3R->C
+
+    Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.'
+  electronchange: 1
+  kinetics:
+    A: 0.0537704
+    Ea: 160719.8313870998
+    n: 2.99372
+    q: 0.166667
+    type: Arrheniusq
+  products:
+  - Li
+  - '[Li]CCOC(=O)O[Li]'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - '[Li]CCOC(=O)O[Li]'
+  type: ElementaryReaction
+- comment: ''
+  electronchange: 0
+  kinetics:
+    A: 4.57285e+17
+    Ea: 69072.2
+    n: -0.785762
+    type: Arrhenius
+  products:
+  - '[Li]OCCO[C]=O'
+  radicalchange: 0
+  reactants:
+  - '[Li]O[C]1OCCO1'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root
+
+    Multiplied by reaction path degeneracy 2.0
+
+    Ea raised from 50.6 to 78.2 kJ/mol to match endothermicity of reaction.'
+  electronchange: 1
+  kinetics:
+    A: 116240.0
+    Ea: 78164.89279357478
+    n: 1.21832
+    q: 0.125
+    type: Arrheniusq
+  products:
+  - '[Li]OCCO[C]=O'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - ethylene-carbonate
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_1NO->O_Ext-3R-R
+
+    Ea raised from 51.9 to 160.7 kJ/mol to match endothermicity of reaction.'
+  electronchange: 1
+  kinetics:
+    A: 0.731943
+    Ea: 160719.83138709975
+    n: 2.46517
+    q: 0.25
+    type: Arrheniusq
+  products:
+  - Li
+  - '[Li]OCCO[C]=O'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - '[Li]OCCO[C]=O'
+  type: ElementaryReaction
+- comment: Fitted to 50 data points; dA = *|/ 3.36722, dn = +|- 0.167182, dEa = +|-
+    0.694638 kJ/mol
+  electronchange: 0
+  kinetics:
+    A: 7829690000000000.0
+    Ea: 7671.700000000001
+    n: -2.51461
+    type: Arrhenius
+  products:
+  - '[Li]OC(=O)O[Li]'
+  - C=C
+  radicalchange: -2
+  reactants:
+  - Li
+  - '[Li]OC(=O)OC[CH2]'
+  type: ElementaryReaction
+- comment: Estimated from node Root_4R!H->C_N-2R!H->N_Ext-3R!H-R_1R!H->O_Ext-7R!H-R_N-8R!H->C
+  electronchange: 1
+  kinetics:
+    A: 2.23949
+    Ea: 3370.347535948523
+    n: 2.34337
+    q: 0.0
+    type: Arrheniusq
+  products:
+  - '[Li]OC(=O)O[Li]'
+  - C=C
+  radicalchange: -1
+  reactants:
+  - Lip
+  - '[Li]OC(=O)OC[CH2]'
+  type: ElementaryReaction
+- comment: Estimated from node Root
+  electronchange: 0
+  kinetics:
+    A: 1.69762e+27
+    Ea: 99332.19666941199
+    n: -4.4977
+    type: Arrhenius
+  products:
+  - '[Li]OC(=O)O[Li]'
+  - C=C
+  radicalchange: 0
+  reactants:
+  - '[Li]CCOC(=O)O[Li]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_1NO->O_3R->C
+
+    Multiplied by reaction path degeneracy 2.0
+
+    Ea raised from 52.9 to 160.7 kJ/mol to match endothermicity of reaction.'
+  electronchange: 1
+  kinetics:
+    A: 0.1075408
+    Ea: 160719.8313870998
+    n: 2.99372
+    q: 0.166667
+    type: Arrheniusq
+  products:
+  - Li
+  - '[Li]OC(=O)O[Li]'
+  radicalchange: 1
+  reactants:
+  - Lip
+  - '[Li]OC(=O)O[Li]'
+  type: ElementaryReaction
+Solvents:
+- mu:
+    A: -47.078
+    B: 2783.2
+    C: 5.3617
+    D: 0.0
+    E: 0.0
+    type: RiedelViscosity
+  name: ethylene carbonate
+  type: Solvent
+Units: {}

@@ -80,7 +80,6 @@ cdef class SurfaceArrhenius(Arrhenius):
 
 ################################################################################
 cdef class SurfaceArrheniusBEP(ArrheniusEP):
-    cdef public dict _coverage_dependence
     pass
 
 ################################################################################

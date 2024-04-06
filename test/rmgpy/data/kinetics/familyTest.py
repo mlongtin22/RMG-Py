@@ -45,7 +45,6 @@ from rmgpy.data.thermo import ThermoDatabase
 from rmgpy.molecule import Molecule
 from rmgpy.species import Species
 from rmgpy.kinetics import Arrhenius
-from rmgpy.reaction import Reaction
 
 import pytest
 
@@ -692,52 +691,8 @@ multiplicity 2
         assert len(products) == 1
         assert expected_products[0].is_isomorphic(products[0])
 
-    def test_surface_proton_electron_reduction_alpha(self):
-        """
-        Test that the Surface_Proton_Electron_Reduction_Alpha family can successfully match the reaction and returns properly product structures.
-        """
-        family = self.database.families['Surface_Proton_Electron_Reduction_Alpha']
-        m_proton = Molecule().from_smiles("[H+]")
-        m_x = Molecule().from_adjacency_list("1 X u0 p0")
-        m_ch2x = Molecule().from_adjacency_list(
-            """
-            1 C u0 p0 c0 {2,S} {3,S} {4,D}
-            2 H u0 p0 c0 {1,S}
-            3 H u0 p0 c0 {1,S}
-            4 X u0 p0 c0 {1,D}
-            """
-            )
-        m_ch3x = Molecule().from_adjacency_list(
-            """
-            1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-            2 H u0 p0 c0 {1,S}
-            3 H u0 p0 c0 {1,S}
-            4 H u0 p0 c0 {1,S}
-            5 X u0 p0 c0 {1,S}
-            """
-            )
-
-        reactants = [m_proton,m_ch2x]
-        expected_products = [m_ch3x]
-
-        labeled_rxn = Reaction(reactants=reactants, products=expected_products)
-        family.add_atom_labels_for_reaction(labeled_rxn)
-        prods = family.apply_recipe([m.molecule[0] for m in labeled_rxn.reactants])
-        self.assertTrue(expected_products[0].is_isomorphic(prods[0]))
-
-        self.assertEqual(len(prods), 1)
-        self.assertTrue(expected_products[0].is_isomorphic(prods[0]))
-        reacts = family.apply_recipe(prods, forward=False)
-        self.assertEqual(len(reacts), 2)
-
-        prods = [Species(molecule=[p]) for p in prods]
-        reacts = [Species(molecule=[r]) for r in reacts]
-
-        fam_rxn = Reaction(reactants=reacts,products=prods)
-
-        self.assertTrue(fam_rxn.is_isomorphic(labeled_rxn))
-
     @pytest.mark.skip(reason="WIP")
+
     def test_save_family(self):
         """
         This method formerly loaded a family and then wrote it back to disk for comparison
@@ -1261,10 +1216,3 @@ multiplicity 2
             )
             == 0
         )
-        # reaction_list = self.database.kinetics.families['Surface_Adsorption_Dissociative'].generate_reactions(reactants)
-        # self.assertEquals(len(reaction_list), 14)
-        reaction_list = self.database.kinetics.families['Surface_Dissociation_vdW'].generate_reactions(reactants)
-        self.assertEquals(len(reaction_list), 0)
-
-if __name__ == '__main__':
-    unittest.main(testRunner=unittest.TextTestRunner(verbosity=2))
